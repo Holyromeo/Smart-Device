@@ -1,0 +1,28 @@
+.page-header__container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #1b2d37;
+  background-image: url("../img/bg-stars.png");
+}
+
+.page-header__logo-image {
+  margin: 33px 0 0 253px;
+}
+
+.page-header__navigation {
+  min-width: 670px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 35px 0 0 auto;
+}
+
+.page-header__navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "PT Mono", monospace;
+  font-size: 16px;
+  line-height: 18px;
+  justify-self: center;
+}
