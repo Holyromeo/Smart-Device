@@ -11,18 +11,40 @@
 }
 
 .page-header__navigation {
-  min-width: 670px;
+  min-width: 620px;
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  margin: 35px 0 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 29px 256px 0 auto;
 }
 
 .page-header__navigation a {
+  width: 194px;
   color: #ffffff;
   text-decoration: none;
   font-family: "PT Mono", monospace;
   font-size: 16px;
   line-height: 18px;
+  letter-spacing: 0.8px;
   justify-self: center;
+}
+
+.page-header__navigation button {
+  width: 180px;
+  margin-left: -74px;
+  padding: 14px;
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.07px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
