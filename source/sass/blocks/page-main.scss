@@ -1,0 +1,42 @@
+.page-main__container {
+  margin-top: -171px;
+  background-color: #1b2d37;
+  background-image: url("../img/bg-stars.png");
+}
+
+h2 {
+  width: 709px;
+  padding-top: 332px;
+  margin-left: 249px;
+
+  @include font-roboto-cond-bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  h2 {
+    width: 320px;
+    padding-top: 207px;
+    margin-left: 88px;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -0.075em;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  h2 {
+    width: 100px;
+    padding-top: 207px;
+    margin-left: 88px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: -0.075em;
+  }
+}
