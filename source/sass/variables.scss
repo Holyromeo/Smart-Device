@@ -1,0 +1,15 @@
+@mixin font-roboto-cond-bold {
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin font-ptmono {
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;  
+}

@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
   background-color: #1b2d37;
   background-image: url("../img/bg-stars.png");
 }
@@ -23,28 +24,40 @@
   width: 194px;
   color: #ffffff;
   text-decoration: none;
-  font-family: "PT Mono", monospace;
-  font-size: 16px;
-  line-height: 18px;
+  @include font-ptmono;
   letter-spacing: 0.8px;
   justify-self: center;
 }
+
+.page-header__navigation li {
+  position: relative;
+}
+
+.page-geader__mail::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 45px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-size: 230px 150px;
+  fill: #00B2FF;
+} 
 
 .page-header__navigation button {
   width: 180px;
   margin-left: -74px;
   padding: 14px;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  @include font-roboto-cond-bold;
   text-align: center;
-  letter-spacing: -0.07px;
+  letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 5px;
+  cursor: pointer;
 }
