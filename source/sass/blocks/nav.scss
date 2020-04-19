@@ -1,0 +1,182 @@
+.nav {
+  width: 100%;
+  display: flex;
+  margin-bottom: 217px;
+}
+
+.nav__logo {
+  margin: 33px 0 0 13.1vw;
+}
+
+.nav__logo img {
+  width: 10.5vw;
+}
+
+.nav__burger {
+  width: 37px;
+  height: 30px;
+  margin: 46px 0 0 6.15vw;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__burger::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  width: 37px;
+  left: 0;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.nav__burger::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 37px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.nav__navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+  margin-left: 18.6vw;
+}
+
+.nav__navigation a {
+  color: #ffffff;
+  text-decoration: none;
+
+  @include font-ptmono;
+  letter-spacing: 0.8px;
+  justify-self: center;
+}
+
+.nav__navigation li {
+  position: relative;
+}
+
+.nav__elem-tel {
+  margin-left: 4.6vw;
+}
+
+.nav__elem-btn {
+  margin-left: 48px;
+  margin-right: 0;
+}
+
+.nav__navigation svg {
+  vertical-align: middle;
+}
+
+.nav__elem-mail svg {
+  margin-right: 11px;
+}
+
+.nav__elem-tel svg {
+  margin-right: 5px;
+}
+
+.nav__mail {
+  width: 9.38vw;
+}
+
+.nav__tel {
+  width: 18vw;
+}
+
+.nav__navigation button {
+  width: 180px;
+  padding: 14px;
+
+  @include font-roboto-cond-bold;
+  text-align: center;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: $tablet-width) {
+  .nav__logo img {
+    width: 202px;
+  }
+
+  .nav__logo {
+    margin: 20px 0 0 26px;
+  }
+
+  .nav__burger {
+    margin: 30px 0 0 47vw;
+  }
+
+  .nav__navigation {
+    margin-top: 32px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .nav__navigation span {
+    font-size: 0;
+  }
+
+  .nav__elem-mail {
+    margin-left: 26%;
+  }
+
+  .nav__elem-tel {
+    margin-left: 4.4vw;
+  }
+
+  .nav__elem-mail svg {
+    margin-right: 0;
+    width: 26px;
+    height: 19px;
+  }
+
+  .nav__elem-tel svg {
+    margin-right: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav__navigation button {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .nav__logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav__logo {
+    margin: 17px 0 0 17px;
+  }
+
+  .nav__burger {
+    margin-top: 20px;
+    margin-left: 35.3%;
+  }
+
+  .nav__navigation {
+    margin-left: 0;
+    margin-top: 22px;
+  }
+
+  .nav__elem-tel {
+    margin-left: 19%;
+  }
+}
