@@ -1,18 +1,18 @@
-.nav {
+.contact-us {
   width: 100%;
   display: flex;
   margin-bottom: 217px;
 }
 
-.nav__logo {
+.contact-us__logo {
   margin: 33px 0 0 13.1vw;
 }
 
-.nav__logo img {
+.contact-us__logo img {
   width: 10.5vw;
 }
 
-.nav__burger {
+.contact-us__burger {
   width: 37px;
   height: 30px;
   margin: 46px 0 0 6.15vw;
@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 
-.nav__burger::before {
+.contact-us__burger::before {
   content: "";
   position: absolute;
   top: 19px;
@@ -32,7 +32,7 @@
   background-color: #ffffff;
 }
 
-.nav__burger::after {
+.contact-us__burger::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -42,7 +42,7 @@
   background-color: #ffffff;
 }
 
-.nav__navigation {
+.contact-us__navigation {
   list-style: none;
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@
   margin-left: 18.6vw;
 }
 
-.nav__navigation a {
+.contact-us__navigation a {
   color: #ffffff;
   text-decoration: none;
 
@@ -59,40 +59,40 @@
   justify-self: center;
 }
 
-.nav__navigation li {
+.contact-us__navigation li {
   position: relative;
 }
 
-.nav__elem-tel {
+.contact-us__elem-tel {
   margin-left: 4.6vw;
 }
 
-.nav__elem-btn {
+.contact-us__elem-btn {
   margin-left: 48px;
   margin-right: 0;
 }
 
-.nav__navigation svg {
+.contact-us__navigation svg {
   vertical-align: middle;
 }
 
-.nav__elem-mail svg {
+.contact-us__elem-mail svg {
   margin-right: 11px;
 }
 
-.nav__elem-tel svg {
+.contact-us__elem-tel svg {
   margin-right: 5px;
 }
 
-.nav__mail {
+.contact-us__mail {
   width: 9.38vw;
 }
 
-.nav__tel {
+.contact-us__tel {
   width: 18vw;
 }
 
-.nav__navigation button {
+.contact-us__navigation button {
   width: 180px;
   padding: 14px;
 
@@ -109,74 +109,78 @@
 }
 
 @media (max-width: $tablet-width) {
-  .nav__logo img {
+  .contact-us {
+    margin-bottom: 93px;
+  }
+
+  .contact-us__logo img {
     width: 202px;
   }
 
-  .nav__logo {
+  .contact-us__logo {
     margin: 20px 0 0 26px;
   }
 
-  .nav__burger {
+  .contact-us__burger {
     margin: 30px 0 0 47vw;
   }
 
-  .nav__navigation {
+  .contact-us__navigation {
     margin-top: 32px;
     margin-left: 0;
     padding: 0;
   }
 
-  .nav__navigation span {
+  .contact-us__navigation span {
     font-size: 0;
   }
 
-  .nav__elem-mail {
+  .contact-us__elem-mail {
     margin-left: 26%;
   }
 
-  .nav__elem-tel {
+  .contact-us__elem-tel {
     margin-left: 4.4vw;
   }
 
-  .nav__elem-mail svg {
+  .contact-us__elem-mail svg {
     margin-right: 0;
     width: 26px;
     height: 19px;
   }
 
-  .nav__elem-tel svg {
+  .contact-us__elem-tel svg {
     margin-right: 0;
     width: 24px;
     height: 24px;
   }
 
-  .nav__navigation button {
+  .contact-us__navigation button {
     display: none;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .nav__logo img {
+  .contact-us__logo img {
     width: 38px;
     height: 38px;
   }
 
-  .nav__logo {
+  .contact-us__logo {
     margin: 17px 0 0 17px;
   }
 
-  .nav__burger {
+  .contact-us__burger {
     margin-top: 20px;
     margin-left: 35.3%;
   }
 
-  .nav__navigation {
+  .contact-us__navigation {
     margin-left: 0;
     margin-top: 22px;
   }
 
-  .nav__elem-tel {
+  .contact-us__elem-tel {
     margin-left: 19%;
   }
 }

@@ -1,0 +1,18 @@
+.bg-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/bg-desktop.png") no-repeat #1b2d37;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: $tablet-width) {
+  .bg-container {
+    background-image: url("../img/bg-tablet.png");
+    background-size: auto;
+    background-position: 0% 0%;
+  }
+}

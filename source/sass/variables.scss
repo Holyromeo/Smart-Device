@@ -1,6 +1,11 @@
 $mobile-width: 767px;
 $tablet-width: 1023px;
 
+@mixin reset() {
+  padding: 0;
+  margin: 0;
+}
+
 @mixin font-roboto-cond-bold {
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-style: normal;
