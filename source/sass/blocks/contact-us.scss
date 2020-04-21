@@ -108,6 +108,29 @@
   cursor: pointer;
 }
 
+@media (max-width: 1399px) and (min-width: 1024px) {
+  .contact-us__logo {
+    margin-left: 50px;
+  }
+
+  .contact-us__logo img {
+    width: 18.5vw;
+  }
+
+  .contact-us__navigation {
+    margin: 0;
+    margin-top: 27px;
+  }
+
+  .contact-us__mail {
+    width: 9.38vw;
+  }
+
+  .contact-us__tel {
+    width: 18vw;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .contact-us {
     margin-bottom: 93px;
