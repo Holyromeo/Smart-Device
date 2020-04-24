@@ -7,7 +7,7 @@
   margin: 0 0 293px 13%;
 }
 
-h2 {
+.motherboards__item h2 {
   margin: 0;
   margin-bottom: 26px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -99,50 +99,179 @@ h2 {
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 1399px) and (min-width: 1024px) {
   h2 {
-    margin-left: 11.4%;
-    margin-bottom: 29px;
+    width: 320px;
+    margin: -1px 0 30px 88px;
     font-size: 60px;
     line-height: 70px;
   }
 
   .motherboards__text {
-    width: 44%;
-    margin-bottom: 55px;
+    width: 50%;
+    margin: 0 0 72px 139px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .motherboards__img {
+    top: -76px;
+    left: 764px;
+    width: 350px;
+    height: 290px;
+  }
+
+  .motherboards__img::after {
+    top: -207px;
+    left: -154px;
+    width: 414px;
+    height: 480px;
+    background-size: 515px 550px;
+  }
+
+  .motherboards__img img {
+    position: absolute;
+    left: -40px;
+    width: 300px;
+    top: -17px;
+    height: 250px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .motherboards__item {
+    margin: 0;
+    margin-bottom: 181px;
+  }
+
+  .motherboards__item h2 {
+    width: 320px;
+    margin: -1px 0 30px 88px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .motherboards__text {
+    width: 50%;
+    margin: 0 0 72px 139px;
     font-size: 18px;
     line-height: 28px;
   }
 
   .motherboards__text::before {
+    width: 33px;
     top: 16px;
     left: -48px;
   }
 
   .motherboards__btn {
     width: 42%;
-    margin: 0 0 277px 18.1%;
-    padding: 17px 28px 17px 25px;
+    margin-left: 18%;
+    padding: 17px 29px 17px 28px;
     letter-spacing: 0.06em;
   }
 
-  .motherboards__img {
-    top: 18px;
-    left: auto;
-    width: 301px;
-    height: 220px;
+  .motherboards__scroll {
+    display: none;
+  }
 
-    &::after {
-      top: -143px;
-      left: 51px;
-      width: 582px;
-      height: 505px;
-      background-size: 580px auto;
-    }
+  .motherboards__img {
+    top: -76px;
+    left: 510px;
+    width: 260px;
+    height: 340px;
+  }
+
+  .motherboards__img::after {
+    top: -207px;
+    left: -154px;
+    width: 414px;
+    height: 650px;
+    background-size: 615px 650px;
   }
 
   .motherboards__img img {
-    width: 301px;
+    width: 260px;
+    height: 340px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .motherboards {
+    display: flex;
+  }
+
+  .motherboards__item {
+    margin: 0;
+    padding: 0;
+    max-width: 320px;
+    order: -1;
+  }
+
+  .motherboards__item h2 {
+    width: 65%;
+    margin: 108px 0 0 15px;
+    padding: 0;
+    font-size: 40px;
+    line-height: 47px;
+    z-index: 100;
+  }
+
+  .motherboards__text {
+    width: 70%;
+    margin: 26px 0 40px 66px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .motherboards__btn {
+    display: none;
+  }
+
+  .motherboards__btn--mobile {
+    display: block;
+    width: 82%;
+    margin-left: 17px;
+    margin-bottom: 70px;
+    padding: 17px 10px 18px 13px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00b2ff;
+    border: 1px solid #00b2ff;
+    border-radius: 5px;
+  }
+
+  .motherboards__img {
+    top: -90px;
+    left: 2px;
+    width: 100%;
+    height: 300px;
+    order: 1;
+  }
+
+  .motherboards__img picture {
+    position: relative;
+  }
+
+  .motherboards__img img {
+    position: absolute;
+    left: 23px;
+    top: 4px;
+    width: 294px;
     height: 220px;
+  }
+
+  .motherboards__img::after {
+    top: -159px;
+    left: 70px;
+    width: 255px;
+    height: 565px;
+    background-size: 585px 565px;
   }
 }
