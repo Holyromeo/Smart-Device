@@ -1,6 +1,9 @@
 .popup {
-  position: fixed;
   display: none;
+}
+
+.popup-show {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,8 +11,4 @@
   overflow-y: scroll;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.popup-show {
-  display: block;
 }

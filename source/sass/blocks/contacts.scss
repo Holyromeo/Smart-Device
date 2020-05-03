@@ -6,13 +6,13 @@
   position: relative;
   display: flex;
   max-width: 1200px;
-  padding: 0 14px 0 14px;
+  padding: 0 4px;
   margin: 0 auto;
 }
 
 .contacts__container img {
   position: relative;
-  margin-left: -9px;
+  margin-left: -2px;
   margin-top: 161px;
 }
 
@@ -167,6 +167,7 @@
 
 .contacts__checkbox {
   margin: 0;
+  margin-top: 9px;
   padding: 0;
   font-size: 14px;
   line-height: 16px;
@@ -174,6 +175,11 @@
   color: #ffffff;
   cursor: pointer;
   opacity: 0.8;
+
+  &:focus {
+    opacity: 1;
+    box-shadow: 0 0 0 2px #000000;
+  }
 }
 
 
@@ -182,7 +188,6 @@
   position: relative;
   display: block;
   padding-left: 71px;
-  margin-top: 9px;
 
   @include font-ptmono;
   font-style: normal;
@@ -195,7 +200,8 @@
   cursor: pointer;
 
   &:hover {
-    opacity: 0.7;
+    opacity: 1;
+    box-shadow: 0 0 0 2px #000000;
   }
 
   &:active {
@@ -218,7 +224,7 @@
   position: absolute;
   top: 0;
   left: 38px;
-  background-image: url("../img/checked_checkbox.svg");
+  background-image: url("../img/checkbox.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -256,10 +262,9 @@
     width: 280px;
   }
 
-  input[type="text"]::-webkit-input-placeholder,
-  input[type="tel"]::-webkit-input-placeholder,
+  .contacts__item input::placeholder,
   .contacts__textarea textarea::placeholder {
-    font-family: "PT Mono", monospace;
+    font-family: "PT Mono", "Courier", monospace;
     font-weight: 400;
     font-style: normal;
   }

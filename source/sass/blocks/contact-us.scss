@@ -92,20 +92,22 @@
   width: 18vw;
 }
 
-.contact-us__navigation button {
+.contact-us__navigation .contact-us__elem-btn {
   width: 180px;
-  padding: 14px;
-
-  @include font-roboto-cond-bold;
-  text-align: center;
-  letter-spacing: -0.07em;
-  text-transform: uppercase;
-  color: #ffffff;
+  padding: 14px 10px 14px 28px;
   background-color: transparent;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.contact-us__elem-btn a {
+  @include font-roboto-cond-bold;
+  text-align: center;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 @media (max-width: 1399px) and (min-width: 1024px) {
@@ -178,7 +180,7 @@
     height: 24px;
   }
 
-  .contact-us__navigation button {
+  .contact-us__navigation .contact-us__elem-btn {
     display: none;
   }
 }

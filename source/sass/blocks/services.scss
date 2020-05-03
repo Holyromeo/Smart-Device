@@ -11,8 +11,8 @@
 .services h2 {
   margin: 0;
   margin-bottom: 51px;
-  padding: 88px 0 0 27px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  padding: 88px 0 0 38px;
+  font-family: "Roboto Condensed", "Courier", sans-serif;
   font-size: 36px;
   line-height: 51px;
   font-weight: normal;
@@ -23,7 +23,7 @@
 
 .services ul {
   margin: 0;
-  padding: 0 15px 98px 15px;
+  padding: 0 15px 98px 25px;
   list-style: none;
   position: relative;
   display: flex;
@@ -43,11 +43,12 @@
   position: relative;
   width: calc((100% - 60px) / 3);
   min-height: 620px;
-  margin-right: 21px;
+  margin-right: 22px;
   margin-bottom: 30px;
 
   &:nth-child(3n) {
     margin-right: 0;
+    margin-left: 5px;
   }
 
   &:hover {
@@ -93,7 +94,7 @@
   }
 
   .services h2 {
-    width: 85%;
+    width: 87%;
     font-size: 32px;
     line-height: 45px;
     padding-top: 48px;

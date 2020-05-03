@@ -1,11 +1,11 @@
 .advantages {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .advantages__container {
   max-width: 1170px;
   margin: 0 auto;
-  padding-top: 112px;
+  padding-top: 110px;
   display: flex;
   flex-direction: column;
 }
@@ -22,12 +22,14 @@
 }
 
 .advantages li {
-  width: 567px;
+  width: 47.8%;
   min-height: 259px;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
   padding-top: 40px;
+  padding-bottom: 0;
+  margin-left: 8px;
   border-left: 3px solid #00b2ff;
 
   &:hover {
@@ -55,7 +57,7 @@
 }
 
 .advantages__item--detective svg {
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .advantages__item h3 {
@@ -70,16 +72,15 @@
 }
 
 .advantages__item p {
-  width: 483px;
+  width: 86%;
 
   @include reset();
   margin-left: 42px;
-  margin-bottom: 67px;
+  margin-bottom: 35px;
 
   @include font-ptmono;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: 0.05em;
   color: #666666;
 }
 
@@ -90,8 +91,8 @@
   }
 
   .advantages li {
-    width: 369px;
-    min-height: 100px;
+    min-height: 207px;
+    margin-left: 0;
     padding-top: 25px;
     border-left: 2px solid #00b2ff;
   }
@@ -103,7 +104,7 @@
   }
 
   .advantages__item p {
-    width: 297px;
+    width: 85%;
     margin: 0 0 20px 27px;
     line-height: 22.5px;
   }
