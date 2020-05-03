@@ -190,13 +190,13 @@
         </ul>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="feedback">
       <div class="contacts__container">
         <img src="img/paper-airplane.png" width="511" height="288" alt="Бумажный самолет">
         <div class="contacts__info">
           <h3>Остались вопросы? Задайте их нам!</h3>
           <span>Мы проконсультируем Вас бесплатно</span>
-          <form id="feedback">
+          <form>
             <p class="contacts__item">
               <input type="text" id="contacts-username" name="name-field" placeholder="Имя" required>
               <label class="visually-hidden" for="contacts-username">Имя</label>
@@ -358,5 +358,55 @@
     </section>
   </div>
   <script src="js/script.js"></script>
+  <script>
+    var linkNav = document.querySelectorAll('.motherboards__scroll'),
+      V = 0.2;
+    for (var i = 0; i < linkNav.length; i++) {
+      linkNav[i].addEventListener('click', function(evt) {
+        evt.preventDefault();
+        var w = window.pageYOffset,
+          hash = this.href.replace(/[^#]*(.*)/, '$1');
+          t = document.querySelector(hash).getBoundingClientRect().top,
+          start = null;
+        requestAnimationFrame(step);
+        function step(time) {
+          if (start === null) start = time;
+          var progress = time - start,
+            r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+          window.scrollTo(0,r);
+          if (r != w + t) {
+            requestAnimationFrame(step)
+          } else {
+            location.hash = feedback
+          }
+        }
+      }, false);
+    }
+  </script>
+  <script>
+    var linkNav = document.querySelectorAll('.motherboards__btn'),
+      V = 0.2;
+    for (var i = 0; i < linkNav.length; i++) {
+      linkNav[i].addEventListener('click', function(evt) {
+        evt.preventDefault();
+        var w = window.pageYOffset,
+          hash = this.href.replace(/[^#]*(.*)/, '$1');
+          t = document.querySelector(hash).getBoundingClientRect().top,
+          start = null;
+        requestAnimationFrame(step);
+        function step(time) {
+          if (start === null) start = time;
+          var progress = time - start,
+            r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+          window.scrollTo(0,r);
+          if (r != w + t) {
+            requestAnimationFrame(step)
+          } else {
+            location.hash = feedback
+          }
+        }
+      }, false);
+    }
+  </script>
 </body>
 </html>
