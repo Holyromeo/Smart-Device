@@ -63,7 +63,7 @@
 
 @media (max-width: $tablet-width) {
   .about-company__container {
-    padding: 24px 25px 71px 0;
+    padding: 24px 0 71px 0;
   }
 
   .about-company img {
@@ -84,6 +84,7 @@
   }
 
   .about-company__info p {
+    width: 99%;
     margin: 0 0 20px -16px;
   }
 
@@ -140,6 +141,7 @@
 
   .about-company__info {
     width: 100%;
+    margin: 0;
     margin-bottom: 75px;
   }
 
@@ -153,12 +155,12 @@
     font-size: 28px;
     line-height: 39px;
     font-weight: 400;
-    margin: 35px 0 20px 12px;
+    margin: 35px 0 20px 0;
   }
 
   .about-company__info p {
-    width: 95%;
-    margin-left: 15px;
+    width: 101%;
+    margin-left: 2px;
     margin-bottom: 40px;
   }
 
@@ -166,8 +168,18 @@
     margin-bottom: 42px;
   }
 
+  .about-company__info p+p::before {
+    left: 138px;
+    top: 167px;
+  }
+
+  .about-company__info p+p::after {
+    left: 148px;
+    top: 167px;
+  }
+
   .about-company__info a {
-    margin-left: 15px;
-    padding: 12px 49px;
+    margin-left: 2px;
+    padding: 13px 50px 12px 49px;
   }
 }

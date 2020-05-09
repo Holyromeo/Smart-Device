@@ -121,6 +121,7 @@
 
 .contacts input:focus,
 .contacts textarea:focus {
+  box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -241,7 +242,8 @@
 
   .contacts__info {
     max-width: 590px;
-    margin-left: -48px;
+    margin: 0 auto;
+    padding-left: 0;
   }
 
   .contacts__info h3 {
@@ -317,7 +319,6 @@
   .contacts__info {
     max-width: 290px;
     padding: 0;
-    margin-left: 0;
   }
 
   .contacts__info h3 {
@@ -327,11 +328,13 @@
   }
 
   .contacts__info span {
+    width: 83%;
+    letter-spacing: 0;
     padding: 14px 0 1px 0;
   }
 
   .contacts__info form {
-    margin-left: -5px;
+    margin-left: -8px;
     margin-top: 22px;
   }
 

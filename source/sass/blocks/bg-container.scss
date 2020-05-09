@@ -9,8 +9,19 @@
 }
 
 @media (max-width: $tablet-width) {
+  body {
+    min-width: 770px;
+  }
+
   .bg-container {
+    width: 100%;
     background-image: url("../img/bg-tablet.png");
     background-position: 0% 0%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    min-width: 320px;
   }
 }

@@ -160,6 +160,8 @@
   }
 
   .services ul {
+    margin: 0;
+    padding: 0;
     padding-bottom: 34px;
   }
 
@@ -167,10 +169,19 @@
     margin-bottom: 30px;
   }
 
+  .services li::after,
+  .services li:first-child::after {
+    right: -1px;
+  }
+
   .services h3 {
     top: 20px;
     left: 35px;
     width: 55%;
+  }
+
+  .services li:nth-child(3n) {
+    margin-left: 0;
   }
 
   .services li:last-child h3 {

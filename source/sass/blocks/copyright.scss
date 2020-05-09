@@ -9,7 +9,7 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: rgba(98, 105, 98, 0.4);
+  background-color: rgba(98, 105, 98, 0.3);
 }
 
 .copyright__year {
@@ -70,7 +70,7 @@
   }
 
   .copyright__year {
-    top: -363px;
+    top: -359px;
     left: 328px;
   }
 
@@ -96,14 +96,19 @@
   .copyright__container {
     flex-direction: column;
     align-items: center;
-    padding: 26px 0 26px;
     margin: 0 auto;
   }
 
   .copyright__year {
-    width: 75%;
-    top: -582px;
-    left: 44px;
+    display: none;
+  }
+
+  .copyright ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 15px;
   }
 
   .copyright__text--privacy {

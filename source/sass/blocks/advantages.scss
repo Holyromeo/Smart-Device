@@ -91,6 +91,7 @@
   }
 
   .advantages li {
+    width: 49.7%;
     min-height: 207px;
     margin-left: 0;
     padding-top: 25px;
@@ -103,8 +104,18 @@
     margin-bottom: 8px;
   }
 
+  .advantages__item--detective svg {
+    width: 31px;
+    margin-left: 25px;
+    margin-top: 0;
+  }
+
+  .advantages__item--detective h3 {
+    margin-bottom: 15px;
+  }
+
   .advantages__item p {
-    width: 85%;
+    width: 80%;
     margin: 0 0 20px 27px;
     line-height: 22.5px;
   }
@@ -125,16 +136,19 @@
 
 @media (max-width: $mobile-width) {
   .advantages__container {
+    width: 90%;
     padding-top: 37px;
-    padding-left: 15px;
+    padding-left: 0;
+    margin-left: 15px;
+    margin-bottom: 4px;
   }
 
   .advantages li {
-    width: 280px;
+    min-width: 90%;
     margin-bottom: 21px;
   }
 
-  .advantages__item-trinket {
+  .advantages__item--trinket {
     margin-top: 1px;
   }
 
@@ -144,51 +158,61 @@
     margin-bottom: 10px;
   }
 
-  .advantages__item-detective h3 {
+  .advantages__item--detective h3 {
     width: 85%;
     margin-left: 25px;
-    margin-bottom: -9px;
+    margin-bottom: -7px;
     line-height: 27px;
   }
 
   .advantages__item p {
-    width: 93%;
+    width: 102%;
     margin: 0 0 24px 25px;
-  }
-
-  .advantages__item-clock p {
-    width: 85%;
-  }
-
-  .advantages__item-detective p {
-    margin-bottom: 53px;
   }
 
   .advantages__item svg {
     margin-bottom: 14px;
   }
 
-  .advantages__item-suppliers svg {
+  .advantages__item--clock p {
+    width: 95%;
+  }
+
+  .advantages__item--detective p {
+    margin-bottom: 53px;
+  }
+
+  .advantages__item--detective svg {
+    width: 13%;
+    margin: 0 0 10px 23px;
+  }
+
+  .advantages__item--suppliers svg {
     margin: -4px 0 18px 21px;
     width: 33px;
   }
 
 
-  .advantages__item-trinket svg {
+  .advantages__item--trinket svg {
     margin: -2px 0 11px 24px;
     width: 33px;
   }
 
-  .advantages__item-trinket p {
-    width: 86%;
+  .advantages__item--trinket p {
+    width: 95%;
     margin-bottom: 28px;
   }
 
-  .advantages__item-suppliers h3 {
-    margin-left: 12px;
+  .advantages__item--suppliers h3 {
+    margin-left: 23px;
   }
 
-  .advantages__item-trinket h3 {
+  .advantages__item--trinket h3 {
+    width: 95%;
     margin-bottom: 12px;
+  }
+
+  .advantages {
+    margin-bottom: 0;
   }
 }

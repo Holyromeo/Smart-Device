@@ -46,7 +46,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  margin-top: 36px;
+  margin-top: 35px;
   margin-left: 18.6vw;
 }
 
@@ -64,11 +64,11 @@
 }
 
 .contact-us__elem-tel {
-  margin-left: 4.6vw;
+  margin-left: 3.9vw;
 }
 
 .contact-us__elem-btn {
-  margin-left: 48px;
+  margin-left: 38px;
   margin-right: 0;
 }
 
@@ -205,7 +205,11 @@
     margin-top: 22px;
   }
 
+  .contact-us__elem-mail {
+    margin-left: 28%;
+  }
+
   .contact-us__elem-tel {
-    margin-left: 19%;
+    margin-left: 27%;
   }
 }
