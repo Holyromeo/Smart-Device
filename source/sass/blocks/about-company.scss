@@ -168,12 +168,12 @@
     margin-bottom: 42px;
   }
 
-  .about-company__info p+p::before {
+  .about-company__info p + p::before {
     left: 138px;
     top: 167px;
   }
 
-  .about-company__info p+p::after {
+  .about-company__info p + p::after {
     left: 148px;
     top: 167px;
   }
