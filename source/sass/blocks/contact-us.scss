@@ -50,7 +50,8 @@
   margin-left: 18.6vw;
 }
 
-.contact-us__navigation a {
+.contact-us__elem-tel a,
+.contact-us__elem-mail a {
   color: #ffffff;
   text-decoration: none;
 
@@ -65,11 +66,6 @@
 
 .contact-us__elem-tel {
   margin-left: 3.9vw;
-}
-
-.contact-us__elem-btn {
-  margin-left: 38px;
-  margin-right: 0;
 }
 
 .contact-us__navigation svg {
@@ -92,22 +88,24 @@
   width: 18vw;
 }
 
-.contact-us__navigation .contact-us__elem-btn {
+.contact-us__elem-btn {
   width: 180px;
-  padding: 14px 10px 14px 28px;
+  padding: 14px 10px;
+  margin-left: 38px;
+  margin-right: 0;
   background-color: transparent;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.contact-us__elem-btn a {
+  text-transform: uppercase;
   @include font-roboto-cond-bold;
   text-align: center;
   letter-spacing: -0.07em;
   text-transform: uppercase;
   color: #ffffff;
+  text-decoration: none;
+  justify-self: center;
 }
 
 @media (max-width: 1399px) and (min-width: 1024px) {
@@ -122,6 +120,7 @@
   .contact-us__navigation {
     margin: 0;
     margin-top: 27px;
+    z-index: 100;
   }
 
   .contact-us__mail {

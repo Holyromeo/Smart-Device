@@ -109,6 +109,10 @@
     line-height: 70px;
   }
 
+  .motherboards {
+    overflow: visible;
+  }
+
   .motherboards__text {
     width: 50%;
     margin: 0 0 72px 139px;
@@ -144,6 +148,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .motherboards {
+    overflow: visible;
+  }
+
   .motherboards__item {
     margin: 0;
     margin-bottom: 181px;
