@@ -381,7 +381,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 217px; }
+  margin-bottom: 150px; }
 
 .contact-us__logo {
   margin: 33px 0 0 13.1vw; }
@@ -548,7 +548,9 @@ body {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  overflow: hidden;
+  padding-top: 67px; }
 
 .motherboards__item {
   margin: 0 0 293px 13%; }
@@ -629,7 +631,7 @@ body {
 
 .motherboards__img {
   position: absolute;
-  top: -56px;
+  top: 11px;
   left: 1039px;
   width: 705px;
   height: 515px; }
