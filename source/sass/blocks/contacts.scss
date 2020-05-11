@@ -230,6 +230,13 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1399px) and (min-width: 1024px) {
+  .contacts__container img {
+    width: 30%;
+    overflow: hidden;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .contacts__container {
     padding: 0 25px;

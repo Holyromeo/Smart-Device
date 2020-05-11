@@ -63,6 +63,12 @@
   margin-left: 28.2%;
 }
 
+@media (max-width: 1399px) and (min-width: 1024px) {
+  .copyright__year {
+    left: 160px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .copyright__container {
     position: relative;
