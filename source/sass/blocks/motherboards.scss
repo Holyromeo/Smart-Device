@@ -150,6 +150,7 @@
 @media (max-width: $tablet-width) {
   .motherboards {
     overflow: visible;
+    padding-top: 0;
   }
 
   .motherboards__item {
