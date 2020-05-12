@@ -46,7 +46,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 46px;
   margin-left: 18.6vw;
 }
 
@@ -90,9 +90,9 @@
 
 .contact-us__elem-btn {
   width: 180px;
+  height: 45px;
   padding: 14px 10px;
-  margin-left: 38px;
-  margin-right: 0;
+  margin: 35px 0 0 38px;
   background-color: transparent;
   border: 1px solid #ffffff;
   box-sizing: border-box;
@@ -106,6 +106,7 @@
   color: #ffffff;
   text-decoration: none;
   justify-self: center;
+  z-index: 102;
 }
 
 @media (max-width: 1399px) and (min-width: 1024px) {
